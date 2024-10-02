@@ -9,7 +9,7 @@ public class Question11 {
         int a = sc.nextInt();
         int b = sc.nextInt();
         int c = sc.nextInt();
-        int max = nextInt();
+        int max = 0;
 
         if (a > b){
             max = a;
