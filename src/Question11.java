@@ -5,28 +5,30 @@ public class Question11 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("세 수를 입력하세요: ");
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        int c = sc.nextInt();
+        System.out.print("첫번째 숫자를 입력해주세요 : ");
+        int first = sc.nextInt();
+        System.out.print("두번째 숫자를 입력해주세요 : ");
+        int second = sc.nextInt();
+        System.out.print("세번째 숫자를 입력해주세요 : ");
+        int third = sc.nextInt();
         int max = 0;
 
-        if (a > b){
-            max = a;
-            if (a > c){
-                max = a;
+        if (first > second){
+            max = first;
+            if (first > third){
+                max = first;
             }
             else{
-                max = c;
+                max = third;
             }
         }
-        else if (a < b){
-            max = b;
-            if(b > c){
-                max = b;
+        else if (first < second){
+            max = second;
+            if(second > third){
+                max = second;
             }
             else{
-                max = c;
+                max = third;
             }
         }
         System.out.print("세개의 숫자 중 가장 큰 숫자는: " + max);
